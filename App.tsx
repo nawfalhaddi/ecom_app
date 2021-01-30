@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
+import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { View, Text } from "react-native";
 import { themeFonts, myTheme } from "./src/core/ecom-app-interface/theme";

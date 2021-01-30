@@ -1,21 +1,10 @@
 import React, { useContext } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import styled, { ThemeContext } from "styled-components/native";
+import MainNavigation from "../core/ecom-app-navigation";
 
 const MainEntry = () => {
-  const context = useContext(ThemeContext);
-
-  return (
-    <View style={{ backgroundColor: `${context.colors.primary}` }}>
-      <CustomText>Test</CustomText>
-    </View>
-  );
+  return <MainNavigation />;
 };
 
 export default MainEntry;
-
-const CustomText = styled.Text`
-  font-family: ${(props) => props.theme.fonts.Black};
-  font-size: 60px;
-  color: ${(props) => props.theme.colors.secondary};
-`;
