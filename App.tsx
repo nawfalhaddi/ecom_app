@@ -1,22 +1,24 @@
+import React, { useContext, useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Index from "./src/main-entry";
+import { View, Text } from "react-native";
+import { themeFonts, myTheme } from "./src/core/ecom-app-interface/theme";
+import { useFonts } from "expo-font";
+import { ThemeProvider } from "styled-components/native";
+import MainEntry from "./src/main-entry";
 
 export default function App() {
+  const [loaded] = useFonts(themeFonts);
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Index />
-    </View>
+    <ThemeProvider theme={myTheme}>
+      <View style={{ flex: 1 }}>
+        <StatusBar style="auto" />
+        <MainEntry />
+      </View>
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
