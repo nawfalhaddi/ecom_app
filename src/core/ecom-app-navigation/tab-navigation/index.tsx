@@ -7,7 +7,7 @@ export const Tab = createBottomTabNavigator();
 const TabNavigation = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Profile test" component={ProfileNavigation} />
+      <Tab.Screen name="Profile" component={ProfileNavigation} />
       <Tab.Screen name="Home" component={ProductsNavigation} />
       <Tab.Screen name="Cart" component={CartNavigation} />
     </Tab.Navigator>

@@ -4,7 +4,7 @@ export const myTheme: DefaultTheme = {
   colors: {
     primary: "#00394D",
     secondary: "#FB6420",
-    bg_color: "#ffffff",
+    light_bg_color: "#ffffff",
   },
   fonts: {
     Black: "SF-Pro-Text-Black",

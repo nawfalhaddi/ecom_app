@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Welcome Message",
+    "introduction": "This text comes from i18next and is provided in english."
+  },
+  "profileHeader": {
+    "name": "Nawfal Haddi",
+    "phone": "+212 682 97 14 74"
+  },
+  "profile": {
+    "Shipping_Addresses": "Shipping Addresses",
+    "Settings": "Settings",
+    "Arabic": "العربية",
+    "English": "English"
+  },
+  "settings": {
+    "Notifications": "Notifications",
+    "Location": "Location"
+  }
+}

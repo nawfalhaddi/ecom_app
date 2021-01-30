@@ -17,7 +17,7 @@ export default function App() {
   return (
     <ThemeProvider theme={myTheme}>
       <View style={{ flex: 1 }}>
-        <StatusBar style="auto" />
+        <StatusBar style="light" />
         <MainEntry />
       </View>
     </ThemeProvider>
