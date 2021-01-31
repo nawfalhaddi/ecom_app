@@ -22,8 +22,15 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "useNextNotificationsApi": true
+      "useNextNotificationsApi": true,
+      "package": "ecom.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD_kZ-fs-vB2PjZ7so7esvIG0f_BlhQATg"
+        }
+      }
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
     }

@@ -1,10 +1,9 @@
 import React, { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { View, Text } from "react-native";
 import { Switch } from "react-native-gesture-handler";
-import Toast from "react-native-toast-message";
-import styled, { ThemeContext } from "styled-components/native";
-import * as Permissions from "expo-permissions";
+import styled from "styled-components/native";
+// import Toast from "react-native-toast-message";
+
 const Settings = () => {
   const { t, i18n } = useTranslation("settings");
   const [isNotificationsEnabled, setIsNotificationsEnabled] = useState(false);

@@ -1,7 +1,9 @@
 {
   "home": {
-    "title": "عنوان تجريبي للنص",
-    "introduction": "هذا النص من i18next وهو باللغة الألمانية."
+    "title": "Home"
+  },
+  "cart": {
+    "title": "عربة التسوق"
   },
   "profileHeader": {
     "name": "نوفل هدي",
@@ -17,5 +19,13 @@
     "Notifications": "إشعارات",
     "Location": "موقعك",
     "Grant_Access": "حقوق الدخول"
+  },
+  "tabBar": {
+    "Profile": "حسابي",
+    "Home": "الرئيسية",
+    "Cart": "عربة التسوق"
+  },
+  "shipping": {
+    "Add_new_address": "أضف عنوان جديد"
   }
 }

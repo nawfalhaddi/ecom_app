@@ -1,7 +1,9 @@
 {
   "home": {
-    "title": "Welcome Message",
-    "introduction": "This text comes from i18next and is provided in english."
+    "title": "Home"
+  },
+  "cart": {
+    "title": "Cart"
   },
   "profileHeader": {
     "name": "Nawfal Haddi",
@@ -17,5 +19,13 @@
     "Notifications": "Notifications",
     "Location": "Location",
     "Grant_Access": "Grant Access"
+  },
+  "tabBar": {
+    "Profile": "Profile",
+    "Home": "Home",
+    "Cart": "Cart"
+  },
+  "shipping": {
+    "Add_new_address": "Add new address"
   }
 }
