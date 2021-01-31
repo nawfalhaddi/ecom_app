@@ -55,6 +55,7 @@ This architecture is inspired by monorepo architecture.
 ## Trade-offs:
 If I had more time :
 - I would love to merge the project to monorepo architecture for better package publishing , dependency management and team work.
+- Complete requested features : map selection , products listing and add to cart.
 - Add new features , like editing profile , authentication , create / update/ delete user's products.
 
 ## Other projects: 
