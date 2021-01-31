@@ -52,6 +52,24 @@ Each module contains the following architecture:
     
 This architecture is inspired by monorepo architecture.
 
+## Trade-offs:
+If I had more time :
+- I would love to merge the project to monorepo architecture for better package publishing , dependency management and team work.
+- Add new features , like editing profile , authentication , create / update/ delete user's products.
+
+## Other projects: 
+- [https://github.com/nawfalhaddi/ShoppingApp](https://github.com/nawfalhaddi/ShoppingApp) .
+- [https://github.com/nawfalhaddi/Dummy-RN-App-FoodApp](https://github.com/nawfalhaddi/Dummy-RN-App-FoodApp)
+
+## Contact me on Linkedin :
+- [https://www.linkedin.com/in/nawfalhaddi/](https://www.linkedin.com/in/nawfalhaddi/)
+
+## Test the app :
+You can install "expo go"  on your smartphone then scan the QR code in this following link :
+
+[https://expo.io/@nawfalhaddi/projects/ecom_app](https://expo.io/@nawfalhaddi/projects/ecom_app)
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
