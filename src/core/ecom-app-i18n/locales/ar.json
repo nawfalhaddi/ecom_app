@@ -15,6 +15,7 @@
   },
   "settings": {
     "Notifications": "إشعارات",
-    "Location": "موقعك"
+    "Location": "موقعك",
+    "Grant_Access": "حقوق الدخول"
   }
 }

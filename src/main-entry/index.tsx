@@ -1,11 +1,16 @@
 import React, { useContext } from "react";
 import { View } from "react-native";
 import styled, { ThemeContext } from "styled-components/native";
+import ToastComponent from "../core/ecom-app-interface/components/Toast";
 import MainNavigation from "../core/ecom-app-navigation";
-import "../core/ecom-app-i18n/i18n";
 
 const MainEntry = () => {
-  return <MainNavigation />;
+  return (
+    <>
+      <MainNavigation />
+      <ToastComponent />
+    </>
+  );
 };
 
 export default MainEntry;

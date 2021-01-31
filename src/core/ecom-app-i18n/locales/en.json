@@ -15,6 +15,7 @@
   },
   "settings": {
     "Notifications": "Notifications",
-    "Location": "Location"
+    "Location": "Location",
+    "Grant_Access": "Grant Access"
   }
 }

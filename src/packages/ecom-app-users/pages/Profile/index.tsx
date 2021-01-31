@@ -5,17 +5,29 @@ import { useTranslation } from "react-i18next";
 import { Feather, AntDesign, FontAwesome } from "@expo/vector-icons";
 import UAE_Flag from "../../../../core/ecom-app-interface/assets/images/UAE_Flag.png";
 import USA_Flag from "../../../../core/ecom-app-interface/assets/images/USA_Flag.png";
+import { StackHeaderProps } from "@react-navigation/stack";
+import Routes from "../../../../core/ecom-app-navigation/Routes";
 
-const Profile = () => {
+const Profile = ({ navigation }: StackHeaderProps) => {
   const { t, i18n } = useTranslation("profile");
   const theme = useContext(ThemeContext);
   return (
     <MainContainer>
-      <ProfileItemButton isRTL={i18n.dir()}>
+      <ProfileItemButton
+        isRTL={i18n.dir()}
+        onPress={() => {
+          navigation.navigate(Routes.Shipping);
+        }}
+      >
         <FeatherIcon name="map-pin" size={30} color={theme.colors.secondary} />
         <ProfileItemText>{t("Shipping_Addresses")}</ProfileItemText>
       </ProfileItemButton>
-      <ProfileItemButton isRTL={i18n.dir()}>
+      <ProfileItemButton
+        isRTL={i18n.dir()}
+        onPress={() => {
+          navigation.navigate(Routes.Settings);
+        }}
+      >
         <FeatherIcon name="settings" size={30} color={theme.colors.secondary} />
         <ProfileItemText>{t("Settings")}</ProfileItemText>
       </ProfileItemButton>
