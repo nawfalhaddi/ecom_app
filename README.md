@@ -36,4 +36,24 @@ The source project folder contains 3 main sub-folders "core", "mainEntry"and "pa
 
 Each module contains the following architecture:
 
- - ####  
+![alt text](https://github.com/nawfalhaddi/ecom_app/blob/main/module_architecture.png)
+
+
+ - ####  Components : 
+    contains common components in that specific module.
+ - ####  data: 
+    contains types ,interfaces and dummy data used in that module.
+
+ - ####  hooks: 
+    contains common hooks used in that module.
+
+ - ####  pages: 
+    contains pages of that module. Each page's folder it may contains "components" and "hooks" folders in case if we have specific elements to use only in that page.
+    
+This architecture is inspired by monorepo architecture.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
