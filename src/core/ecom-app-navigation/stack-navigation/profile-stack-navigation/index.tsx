@@ -1,7 +1,6 @@
 import {
   createStackNavigator,
   TransitionPresets,
-  TransitionSpecs,
 } from "@react-navigation/stack";
 import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";

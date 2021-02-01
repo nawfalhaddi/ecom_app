@@ -7,7 +7,7 @@ export type AddressAction = {
   payload: any;
 };
 export type ProductReducerState = {
-  availableProducts: [];
+  products: [];
 };
 export type AddressesReducerState = {
   addresses: [];

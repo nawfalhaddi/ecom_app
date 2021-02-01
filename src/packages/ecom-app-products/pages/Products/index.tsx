@@ -1,16 +1,43 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../../core/ecom-app-store//types";
-const Products = () => {
-  const { availableProducts } = useSelector(
-    (state: RootState) => state.ProductReducer
-  );
+import _ from "lodash";
+import EmptyScreen from "../../../../core/ecom-app-interface/components/EmptyScreen";
+import { FlatList, View } from "react-native";
+import ProductItem from "../../components/ProductItem";
+import Loader from "../../../../core/ecom-app-interface/components/Loader";
+import { StackHeaderProps } from "@react-navigation/stack";
+import Routes from "../../../../core/ecom-app-navigation/Routes";
+import useGetProducts from "./hooks/useGetProducts";
 
+const Products = ({ navigation }: StackHeaderProps) => {
+  const { isLoading, data, error } = useGetProducts();
+
+  if (isLoading) {
+    return <Loader />;
+  } else if (error) {
+    return <EmptyScreen />;
+  }
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <FlatList
+      extraData={data}
+      data={data ? data : []}
+      contentContainerStyle={{ paddingBottom: 100 }}
+      numColumns={2}
+      columnWrapperStyle={{ alignItems: "center", alignSelf: "center" }}
+      refreshing={isLoading}
+      renderItem={({ item }) => {
+        return (
+          <ProductItem
+            key={item.id}
+            product={item}
+            onPress={() => {
+              navigation.navigate(Routes.ProductDetails, {
+                product: item,
+              });
+            }}
+          />
+        );
+      }}
+    />
   );
 };
 
