@@ -5,7 +5,6 @@ import { View, Text } from "react-native";
 import { Product } from "../../data/types";
 
 const ProductDetails = ({ route }: StackScreenProps<RouterConfigOptions>) => {
-  console.log(route.params);
   return (
     <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
       <Text>{route.params.product.title}</Text>
